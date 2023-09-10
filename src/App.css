@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+#main{
+  margin-left: 5%;
+  margin-right: 5%;
+  /*height: 100%;*/
+  /*width: 100%;*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*bottom: 0;*/
+}
+
+#body{
+  margin-top: 10px;
+}
+
+#main-menu{
+}
+
+.lang-button{
+  font-weight: bold;
+}
+
+.active-lang-button{
+  font-weight: bold;
+  background-color: #6195bf;
+  color: azure;
+}
+
+/*.active-lang-button:hover {*/
+/*  font-weight: bold;*/
+/*  background-color: #6195bf;*/
+/*  color: azure;*/
+/*}*/
