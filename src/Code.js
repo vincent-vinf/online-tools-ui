@@ -2,6 +2,7 @@ import React from 'react';
 import {gruvboxLight} from "@uiw/codemirror-theme-gruvbox-dark";
 import {langs} from '@uiw/codemirror-extensions-langs';
 import CodeMirror from "@uiw/react-codemirror";
+import {EditorView} from "@codemirror/view";
 
 const langConfigMap = {
     Golang: [langs.go()],
@@ -11,6 +12,7 @@ const langConfigMap = {
     Javascript: [langs.javascript({jsx: true})],
     CPP: [langs.cpp()],
     Python: [langs.python()],
+    "": [],
 }
 
 function Code({text, lang, readOnly, onTextChange}) {
@@ -23,7 +25,7 @@ function Code({text, lang, readOnly, onTextChange}) {
             value={text}
             height="600px"
             theme={gruvboxLight}
-            extensions={langConfigMap[lang]}
+            extensions={[...langConfigMap[lang], EditorView.lineWrapping]}
             onChange={handleTextChange}
             readOnly={readOnly}
         />

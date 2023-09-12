@@ -3,7 +3,7 @@ import {Button, Col, message, Row} from "antd";
 import yaml from "js-yaml";
 import Code from "./Code";
 
-const unknownLang = "Unknown"
+const unknownLang = ""
 const languages = ['JSON', 'YAML', 'Golang', 'Java', 'Javascript', 'CPP', 'Python']
 
 function formatJSON(jsonString) {
