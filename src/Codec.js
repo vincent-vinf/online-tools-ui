@@ -78,19 +78,18 @@ function Codec() {
 
                 </Col>
             </Row>
-            <div style={{padding: "8px"}}></div>
+            <div style={{padding: "6px"}}></div>
             <Row gutter={16}>
-                <Col flex="auto">
-                    <Code text={text} lang='' onTextChange={setText}></Code>
-                </Col>
-                <Col flex="50px">
-                    <Button type="primary" size="large" style={{backgroundColor: "#7dba4b", fontWeight: "bold"}}
+                <Col span={12}>
+                    <Button type="primary" size="large"
+                            style={{backgroundColor: "#7dba4b", fontWeight: "bold", float: "right"}}
                             onClick={() => encode()}
                             icon={<FontAwesomeIcon icon={faAnglesRight} fade/>}
                     >
                         Encode
                     </Button>
-                    <div style={{padding: "6px"}}></div>
+                </Col>
+                <Col span={12}>
                     <Button type="primary" size="large" style={{backgroundColor: "#7dba4b", fontWeight: "bold"}}
                             onClick={() => decode()}
                             icon={<FontAwesomeIcon icon={faAnglesLeft} fade/>}
@@ -98,7 +97,13 @@ function Codec() {
                         Decode
                     </Button>
                 </Col>
-                <Col flex="auto">
+            </Row>
+            <div style={{padding: "8px"}}></div>
+            <Row gutter={16}>
+                <Col span={12}>
+                    <Code text={text} lang='' onTextChange={setText}></Code>
+                </Col>
+                <Col span={12}>
                     <Code text={resultText} lang='' onTextChange={setResultText}></Code>
                 </Col>
             </Row>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/go-wasm-tools-ui.iml" filepath="$PROJECT_DIR$/.idea/go-wasm-tools-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../online-tools-ui/.idea/online-tools-ui.iml" filepath="$PROJECT_DIR$/../online-tools-ui/.idea/online-tools-ui.iml" />
     </modules>
   </component>
 </project>
