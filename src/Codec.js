@@ -59,7 +59,7 @@ function Codec() {
 
     return (
         <div>
-            <Row>
+            <Row gutter={16}>
                 <Col flex="auto">
                     <Row gutter={16}>
                         {encodings.map((text, index) => (
@@ -75,12 +75,6 @@ function Codec() {
                     </Row>
                 </Col>
                 <Col flex="1px">
-
-                </Col>
-            </Row>
-            <div style={{padding: "6px"}}></div>
-            <Row gutter={16}>
-                <Col span={12}>
                     <Button type="primary" size="large"
                             style={{backgroundColor: "#7dba4b", fontWeight: "bold", float: "right"}}
                             onClick={() => encode()}
@@ -89,7 +83,7 @@ function Codec() {
                         Encode
                     </Button>
                 </Col>
-                <Col span={12}>
+                <Col flex="1px">
                     <Button type="primary" size="large" style={{backgroundColor: "#7dba4b", fontWeight: "bold"}}
                             onClick={() => decode()}
                             icon={<FontAwesomeIcon icon={faAnglesLeft} fade/>}
@@ -98,6 +92,7 @@ function Codec() {
                     </Button>
                 </Col>
             </Row>
+
             <div style={{padding: "8px"}}></div>
             <Row gutter={16}>
                 <Col span={12}>
